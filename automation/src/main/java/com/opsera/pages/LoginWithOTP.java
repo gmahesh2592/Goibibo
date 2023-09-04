@@ -53,17 +53,20 @@ public class LoginWithOTP {
 	public static By verifyMobileNum = By.xpath("//span[text()='Mobile Number cannot be empty']");
 	public static By firstMiddileName=By.xpath("//span[contains(text(),'First & Middle Name is mandatory')]");
 	public static By selectGender = By.xpath("//Select[contains(@class,'common-elementsstyles__CustSelectT')]");
-	public static By gender = By.xpath("//option[@value='MALE']");
+	public static By gender = By.xpath("//select/option[text()='Male']");
 	public static By firstName = By.xpath("//input[@name='givenname']");
 	public static By selectDay = By.xpath("(//select[contains(@class,'common-elementsstyles__CustSelectTrvl-')])[2]");
 	public static By selectMonth = By.xpath("(//select[contains(@class,'common-elementsstyles__CustSelectTrvl-')])[3]");
 	public static By selectYear = By.xpath("(//select[contains(@class,'common-elementsstyles__CustSelectTrvl-')])[4]");
-	public static By dayOne = By.xpath("option[@value='01']");
-	public static By monthOne = By.xpath("option[@value='01']");
+	public static By dayOne = By.xpath("//option[@value='01']");
+	public static By monthOne = By.xpath("//option[@value='01']");
 	public static By year = By.xpath("//option[@value='2022']");
 	public static By inputEmail = By.xpath("//input[@name='email']");
 	public static By inputmobile = By.xpath("//input[@name='mobile']");
 	public static By proceedPaymentbtn=By.xpath("//button[text()='Proceed To Payment']");
+	public static By captureDept=By.xpath("//div[contains(@class,'NewSortOptionsstyles__SortOptionWrapper')][last()-1]");
+	public static By captureReturn=By.xpath("//div[contains(@class,'NewSortOptionsstyles__SortOptionWrapper')][last()]");
+	
 	String firstMiddleName;
 
 	public void getPagetitle(WebDriver driver) {
@@ -110,6 +113,7 @@ public class LoginWithOTP {
 				.findElements(By.xpath("//ul[contains(@id,'autoSuggest-list')]//li"));
 		System.out.println("To City list size:" + totalCountToValues.size());
 		for (WebElement e : totalCountToValues) {
+			System.out.println("Last flight:"+e.getText());
 			if (e.getText().contains(cm.getProperty("InputTo"))) {
 				e.click();
 				break;
@@ -187,12 +191,21 @@ public class LoginWithOTP {
 		for (WebElement e : totalCountFlightDepRet) {
 			System.out.println("showing total count of flights both departure and return :" + e.getText());
 		}
-		getFlightsNames(driver);
+		captureDepatureText(driver);
+		captureReturnText(driver);
+		
+	}
+	public void captureDepatureText(WebDriver driver) {
+		String depatureText=cf.doGetText(captureDept, driver);
+		System.out.println("capture depature details:"+depatureText);	
+	}
+	public void captureReturnText(WebDriver driver) {
+		String returnText=cf.doGetText(captureReturn, driver);
+		System.out.println("capture return details:"+returnText);	
 	}
 
 	public void getAllFlightDetails(WebDriver driver) throws Exception {
 		StringBuffer s  = new StringBuffer();
-		String s1="";
 		for (int i = 0; i < 9; i++) {
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,2000)", "");
