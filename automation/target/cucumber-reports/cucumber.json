@@ -1,0 +1,275 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-09-04T10:21:45.235Z",
+        "line": 3,
+        "name": "Login into application with OTP",
+        "description": "",
+        "id": "goibibo-application--login-with-otp;login-into-application-with-otp",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 439337500,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is in login page",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.user_is_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4538385900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Click on Flights",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.click_on_flights()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3859920300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "enter from value",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.enter_from_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 515135200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter to value",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.enter_to_value()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 549333900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "select departure date",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.select_departure_date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 252677600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on done btn",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.click_on_done_btn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 207417500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on adults",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.click_on_adults()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 272584200,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Click on children",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.click_on_children()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 122260400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "click on infants",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.click_on_infants()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 161227400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "click on done Add people",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.click_on_done_add_people()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25613826700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on search Flights btn",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.click_on_search_flights_btn()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 47511514200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "showing total number flights for departure and return",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.showing_total_number_flights_for_departure_and_return()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 48191014300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Get all the flight details",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.get_all_the_flight_details()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 79270806500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Select last flight",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.select_last_flight()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1269695400,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "list and capture all details for Economy",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.list_and_capture_all_details_for_Economy()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 265521459800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "verify fare summary",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.verify_fare_summary()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been \"select\" but was \"option\"\nBuild info: version: \u00274.1.0\u0027, revision: \u002787802e897b\u0027\nSystem info: host: \u0027DELL\u0027, ip: \u0027192.168.0.13\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002717.0.2\u0027\nDriver info: driver.version: unknown\r\n\tat org.openqa.selenium.support.ui.Select.\u003cinit\u003e(Select.java:49)\r\n\tat com.opsera.commonfunctions.CommonFunctions.doSelectByValue(CommonFunctions.java:217)\r\n\tat com.opsera.pages.LoginWithOTP.inputInfantDetails(LoginWithOTP.java:328)\r\n\tat com.opsera.stepDef.LoginWithOTPStepDef.verify_all_error_messages_in_the_page(LoginWithOTPStepDef.java:104)\r\n\tat ✽.Verify all error messages in the page(file:///C:/Users/PRASUNA/eclipse-workspace/automation/src/test/resources/cucumber/features/LoginWithOTP.feature:20)\r\n",
+              "duration": 22210767900,
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "Verify all error messages in the page",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.verify_all_error_messages_in_the_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "Enter all mandatory fields in the page and click on Proceed",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.enter_all_mandatory_fields_in_the_page_and_click_on_proceed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1140700,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Select 14a, 14b,14c ,14d from the seats",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.select_14a_14b_14c_14d_from_the_seats()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Proceed to Payment",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.proceed_to_payment()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1078900,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Capture all details from the confirm booking",
+            "match": {
+              "location": "com.opsera.stepDef.LoginWithOTPStepDef.capture_all_details_from_the_confirm_booking()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Goibibo application -Login with OTP",
+    "description": "",
+    "id": "goibibo-application--login-with-otp",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/cucumber/features/LoginWithOTP.feature",
+    "tags": []
+  }
+]
